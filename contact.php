@@ -15,7 +15,7 @@
 
     <?php
     $alert = '';
-    if (isset($_POST["name"])) {
+    if (isset($_REQUEST["name"])) {
         $name = $_REQUEST['name'];
         $phone = $_REQUEST['phone'];
         $email = $_REQUEST['email'];
@@ -74,7 +74,7 @@
                     <a target="_blank" href="https://linkedin.com/in/amit1dhakal" class="fab fa-linkedin"></a>
                 </div>
             </div>
-            <form method="post" action="contact.php">
+            <form method="get" action="contact.php">
                 <div class="inputBox" style="color:white; font-size:15px;padding:5px;"> <?php echo $alert; ?> </div>
                 <div class="inputBox">
                     <input type="text" name="name" placeholder="Full Name" required>

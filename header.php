@@ -7,4 +7,16 @@
 <link rel="stylesheet" href="assets/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="manifest" href="assets/manifest.json" />
-<script  href="assets/js/service-worker.js"> </script>
+<script type="text/javascript">
+         if ( "serviceWorker" in navigator ) {
+           navigator.serviceWorker.register( "/assets/js/service-worker.js" )
+             .then( function ( registration ) { 
+              //  console.log( "ServiceWorker registration successful with scope: ", registration.scope );
+         
+             } ).catch( function ( err ) { 
+         
+              //  console.error( "ServiceWorker registration failed: ", err );
+             } );
+         
+         }
+      </script>
