@@ -75,7 +75,7 @@
                 </div>
             </div>
             <form method="post" action="contact.php">
-            <div class="inputBox" style="color:white; font-size:15px;padding:5px;"> <?php echo $alert; ?> </div>
+                <div class="inputBox" style="color:white; font-size:15px;padding:5px;"> <?php echo $alert; ?> </div>
                 <div class="inputBox">
                     <input type="text" name="name" placeholder="Full Name" required>
                     <input type="number" name="number" placeholder="Your Phone No." required>
@@ -85,7 +85,10 @@
                     <input type="text" name="subject" placeholder="Subject" required>
                 </div>
                 <textarea name="message" placeholder="Message" id cols="30" rows="10" required></textarea>
-                <input type="submit" value="Send Message" class="btn">
+                <div style="text-align: center;">
+                    <input type="submit" value="Send Message" class="btn">
+                </div>
+
             </form>
         </div>
     </section>
